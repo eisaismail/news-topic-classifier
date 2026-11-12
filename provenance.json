@@ -1,0 +1,49 @@
+{
+  "dataset": "AG News topic classification, version 3",
+  "dataset_revision": "03836ce08fce38daac53e9b4255ef16e0b9f6303",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "retrieved_at_utc": "2026-11-12T02:27:56.633363+00:00",
+  "assets": {
+    "data/train.csv": {
+      "url": "https://raw.githubusercontent.com/mhjabreel/CharCnn_Keras/03836ce08fce38daac53e9b4255ef16e0b9f6303/data/ag_news_csv/train.csv",
+      "sha256": "76a0a2d2f92b286371fe4d4044640910a04a803fdd2538e0f3f29a5c6f6b672e",
+      "bytes": 29470338
+    },
+    "data/test.csv": {
+      "url": "https://raw.githubusercontent.com/mhjabreel/CharCnn_Keras/03836ce08fce38daac53e9b4255ef16e0b9f6303/data/ag_news_csv/test.csv",
+      "sha256": "521465c2428ed7f02f8d6db6ffdd4b5447c1c701962353eb2c40d548c3c85699",
+      "bytes": 1857427
+    },
+    "data/readme.txt": {
+      "url": "https://raw.githubusercontent.com/mhjabreel/CharCnn_Keras/03836ce08fce38daac53e9b4255ef16e0b9f6303/data/ag_news_csv/readme.txt",
+      "sha256": "779c2e6bbf93dd810d9c7b318006daef7a4bfc34062002461d251dc10fb9f58c",
+      "bytes": 1795
+    },
+    "data/classes.txt": {
+      "url": "https://raw.githubusercontent.com/mhjabreel/CharCnn_Keras/03836ce08fce38daac53e9b4255ef16e0b9f6303/data/ag_news_csv/classes.txt",
+      "sha256": "612dbfa932f07a6ed837295a7d5746ce7412e7bb4bc32ba919fdb3cda3a1b9b5",
+      "bytes": 31
+    },
+    "models/minilm/encoder.onnx": {
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/onnx/model.onnx",
+      "sha256": "6fd5d72fe4589f189f8ebc006442dbb529bb7ce38f8082112682524616046452",
+      "bytes": 90405214
+    },
+    "models/minilm/tokenizer.json": {
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer.json",
+      "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+      "bytes": 466247
+    },
+    "models/minilm/MODEL_CARD.md": {
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md",
+      "sha256": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0",
+      "bytes": 10502
+    },
+    "models/minilm/config.json": {
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json",
+      "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+      "bytes": 612
+    }
+  }
+}

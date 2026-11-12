@@ -1,0 +1,25 @@
+method,test_row_id,actual,predicted,model_score
+tfidf,4029,World,Business,0.99409684419452
+tfidf,1618,World,Sports,0.9936394628487412
+tfidf,2945,World,Business,0.9923456840019197
+tfidf,4541,Sports,World,0.8206552116567178
+tfidf,1009,Sports,World,0.7876033867642517
+tfidf,3974,Sports,Science and Technology,0.7764001118588825
+tfidf,6593,Business,Science and Technology,0.9918357488293755
+tfidf,3672,Business,Science and Technology,0.9913205532778218
+tfidf,4001,Business,Science and Technology,0.9851223474931112
+tfidf,6248,Science and Technology,Business,0.97943614449445
+tfidf,259,Science and Technology,Business,0.9721979554476015
+tfidf,5266,Science and Technology,Business,0.9687587171970932
+minilm,3806,World,Sports,0.9977438449859619
+minilm,373,World,Sports,0.9970947504043579
+minilm,2469,World,Sports,0.9964893460273743
+minilm,2891,Sports,Business,0.8980536460876465
+minilm,5693,Sports,Business,0.8894199728965759
+minilm,1318,Sports,World,0.8849090933799744
+minilm,6186,Business,Sports,0.9987190961837769
+minilm,4360,Business,Science and Technology,0.9980834722518921
+minilm,1052,Business,Science and Technology,0.9977320432662964
+minilm,3266,Science and Technology,Sports,0.9957660436630249
+minilm,1270,Science and Technology,World,0.9943304061889648
+minilm,2661,Science and Technology,Business,0.984212338924408

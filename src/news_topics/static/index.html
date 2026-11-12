@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News Topic Classifier</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/">News Topic Classifier<span class="brand-dot">.</span></a><span class="status" id="status">Checking models</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">NLP / TEXT CLASSIFICATION</p><h1>A story. Four possible topics.</h1><p class="lead">Compare a word-based classifier with a pretrained language model. Paste a headline or short article and see how each reads it.</p></div><aside class="categories"><span>01 &nbsp; World</span><span>02 &nbsp; Sports</span><span>03 &nbsp; Business</span><span>04 &nbsp; Science &amp; Technology</span></aside></section>
+    <div class="workspace">
+      <section class="panel input-panel"><div class="section-heading"><h2>Try an article</h2><span id="count">0 / 10,000</span></div>
+        <form id="classify-form"><label for="article">Headline or article text</label><textarea id="article" maxlength="10000" rows="8" placeholder="Paste an English news headline or short article here." required></textarea><div class="input-footer"><p>Processed on this computer. Text is not saved.</p><button id="submit" type="submit">Classify article <span aria-hidden="true">↗</span></button></div></form>
+        <p id="error" class="error" role="alert" hidden></p>
+        <div class="examples"><h3>Or try an AG News article</h3><div id="examples" class="example-buttons"></div><p id="source" class="source">Examples come from the dataset's separate test file.</p></div>
+      </section>
+      <section class="panel output-panel" aria-live="polite"><div class="section-heading"><h2>The predictions</h2><span class="model-count">2 MODELS</span></div>
+        <div id="empty" class="empty"><div class="empty-mark" aria-hidden="true">Aa</div><h3>What is the story about?</h3><p>Add an article to compare the two methods.</p></div>
+        <div id="predictions" hidden></div>
+        <p class="notice">Four topics, English news only. Every input gets a topic, even when none fits. Scores show model preference, not guaranteed correctness.</p>
+      </section>
+    </div>
+    <section class="evaluation"><div class="evaluation-heading"><div><p class="eyebrow">EVALUATION</p><h2>How they performed on AG News</h2></div><p id="split-note">Results load from the saved evaluation.</p></div><div class="evaluation-grid"><table><caption class="sr-only">Comparison on official AG News test articles</caption><thead><tr><th>Method</th><th>Accuracy</th><th>Macro F1</th></tr></thead><tbody id="metrics"><tr><td colspan="3">Loading results…</td></tr></tbody></table><div class="evaluation-note"><h3>A comparison, not a guarantee.</h3><p>These are historical news articles from four categories. Performance on today's headlines, other languages or different topics may be lower.</p><a href="/docs">Explore the API <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="mistakes"><div><p class="eyebrow">ERROR ANALYSIS</p><h2>Look at the misses, too.</h2><p>Try an article the language model classified incorrectly. The label and prediction are shown so you can inspect the disagreement.</p></div><div id="mistakes" class="mistake-buttons"></div></section>
+  </main><footer><span>AG News · TF-IDF + logistic regression · MiniLM embeddings + logistic regression</span><span>A local NLP portfolio project</span></footer>
+</body></html>
